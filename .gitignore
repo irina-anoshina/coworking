@@ -1,0 +1,8 @@
+rest/target
+rest/.idea/
+.idea/
+**/*.iml
+web2/node_modules
+web2/typings
+web2/app/**/*.js
+web2/app/**/*.js.map
