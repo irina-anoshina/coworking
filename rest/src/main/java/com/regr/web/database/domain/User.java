@@ -45,10 +45,6 @@ public class User {
     @Column(length = 255)
     private String avatar;
 
-
-    /** Удален ли данный аккаунт */
-    @Column(nullable = false)
-    private Boolean deleted;
     /** Подтвержден ли юзером введенный им E-Mail */
     @Column(name = "email_validated", nullable = false)
     private Boolean emailValidated;
@@ -56,6 +52,9 @@ public class User {
     @Column(name = "phone_validated")
     private Boolean phoneValidated;
 
+    /** Удален ли данный аккаунт */
+    @Column(nullable = false)
+    private Boolean deleted;
     /** Дата и время создания юзера */
     @Column(name = "created_time")
     @Temporal(TemporalType.TIMESTAMP)
